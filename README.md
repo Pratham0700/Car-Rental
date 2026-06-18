@@ -1,5 +1,8 @@
 # Car Rental System
 
+🚗 Live Demo: https://car-rental-peach-beta.vercel.app
+
+
 A full-stack Car Rental web application built using React, Node.js, Express, PostgreSQL, and Sequelize.
 
 The platform allows users to:
@@ -32,6 +35,7 @@ The platform allows users to:
 - Update Car Availability
 - View and Manage Bookings
 - Owner Dashboard
+- Cloudinary Image Upload & Storage
 
 ## Tech Stack
 
@@ -75,6 +79,68 @@ npm install
 npm run dev
 ```
 
+## Database Setup
+
+This project uses PostgreSQL as the primary database.
+
+### Create Database
+
+Create a PostgreSQL database:
+
+```sql
+CREATE DATABASE car_rental;
+```
+
+### Import Database Schema
+
+The complete database schema is available in:
+
+```txt
+Database/database-schema.sql
+```
+
+Run the following command to create all required:
+
+* Enums
+* Tables
+* Sequences
+* Indexes
+* Constraints
+* Foreign Keys
+
+```bash
+psql -U postgres -d car_rental -f Database/database-schema.sql
+```
+
+### Database Structure
+
+The schema includes:
+
+* Users
+* Cars
+* Car Images
+* Bookings
+
+With proper relationships, foreign keys, and soft-delete support.
+
+### Verify Installation
+
+After importing the schema, verify that the following tables exist:
+
+```sql
+\dt
+```
+
+Expected tables:
+
+```txt
+users
+cars
+car_images
+bookings
+```
+
+
 ## Frontend Environment Variables
 
 Create a `.env` file inside the `Frontend` folder.
@@ -116,9 +182,12 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
    - API Secret
 5. Add them to your Backend `.env` file.
 
+
 ## Project Status
 
-Currently under active development with features including authentication, car management, booking management, and image uploads.
+Core features are completed and deployed.
+Additional enhancements and optimizations are currently in progress.
+
 
 ## Author
 
