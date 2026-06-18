@@ -98,7 +98,7 @@ setshowlogin(true)
   return (
     <div className="flex relative h-screen w-full ">
 
-    <div className="flex bg-red-600 w-full ">
+    <div className="flex  w-full ">
        <img
             src={assets.login_image}
             alt="Luxury car on road"
