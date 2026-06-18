@@ -10,7 +10,13 @@ const dbcontext = new Sequelize({
     username:db_username,
     password:db_password,
     port:db_port,
-    dialect:'postgres'
+    dialect:'postgres', 
+    dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
 })
 
 export default dbcontext
