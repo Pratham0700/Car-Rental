@@ -8,7 +8,7 @@ export const db_username=process.env.DB_USERNAME;
 export const db_password=process.env.DB_PASSWORD;
 export const db_port =  Number(process.env.DB_PORT)
 
-export const salt = Number(process.env.salt)
+export const salt = Number(process.env.SALT)
 export const jwt_key =process.env.JWT_KEY as string
 
 
