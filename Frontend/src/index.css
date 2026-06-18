@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap');
+@plugin "@tailwindcss/typography";
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+
+@theme {
+  --color-primary:#2563EB;
+  --color-primary-dull:#1F5FD8;
+  --color-light:#F1F5F9;
+  --color-borderColor:#c4c7d2;
+}
