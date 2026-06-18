@@ -5,7 +5,7 @@ import dbcontext from './src/config/db';
 import { port} from './src/config/AppConfig';
 import './src/services/job_schedular.service'
 const app = express();
-app.use(cors({origin:'https://car-rental-peach-beta.vercel.app/',methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
+app.use(cors({origin:'https://car-rental-peach-beta.vercel.app',methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
   credentials: true}))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
